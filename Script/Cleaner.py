@@ -35,11 +35,9 @@ def Clean(source) :
     for entry in scandir(path) :
         if entry.is_file() :
             extension = splitext(entry.name)[-1].lower()
-            if extension in json_extension.keys() : 
+            if extension in json_extension.keys() and entry.stat().st_size <= (1400 * 2**20): 
                 move_file("/home/vym/"+json_extension[extension],entry,entry.name)
-    
 
-# ! NO NEED TO CHANGE BELOW CODE
 if __name__ == "__main__":
     while True :
         for source in source_dir :

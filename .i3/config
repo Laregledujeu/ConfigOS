@@ -427,7 +427,7 @@ exec python /home/vym/Script/Cleaner.py &
 
 
 # Bind Spotify
-bindsym Ctrl+Mod1+space exec (playerctl --player=spotify play-pause &&  notify-send -i "/home/vym/.i3/Icons/SpotifyIcon.png" "Play-Pause") || ((spotify &) &&  notify-send -i "/home/vym/.i3/Icons/SpotifyIcon.png" "Launch") 
+bindsym Ctrl+Mod1+space exec (playerctl --player=spotify play-pause &&  notify-send -t 1500 -i "/home/vym/.i3/Icons/SpotifyIcon.png" "Play-Pause") || ((spotify &) &&  notify-send -t 3000 -i "/home/vym/.i3/Icons/SpotifyIcon.png" "Launch") 
 bindsym Ctrl+Mod1+Right exec playerctl --player=spotify next || notify-send "Assistant" "Spotify n'est pas ouvert"
 bindsym Ctrl+Mod1+Left exec playerctl --player=spotify previous || notify-send "Assistant" "Spotify n'est pas ouvert"
 bindsym Ctrl+Mod1+Up exec pactl set-sink-volume 0 +5% && pactl set-sink-volume 1 +5%
