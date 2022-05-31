@@ -1,0 +1,3 @@
+alias TP="cd /DATA/"
+alias al="vim .zsh_aliases"
+alias gitu="git add * && git commit && git push"
