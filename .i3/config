@@ -422,6 +422,10 @@ exec /home/vym/Script/polybar_all_monitors.sh
 # Start Ulancher
 exec ulauncher &
 
+# Start Cleaner
+exec python /home/vym/Script/Cleaner.py &
+
+
 # Bind Spotify
 bindsym Ctrl+Mod1+space exec playerctl --player=spotify play-pause
 bindsym Ctrl+Mod1+Right exec playerctl --player=spotify next

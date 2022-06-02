@@ -1,0 +1,30 @@
+{
+".jpg" : "Pictures", 
+".jpeg" : "Pictures", 
+".jpe" : "Pictures", 
+".png" : "Pictures", 
+".gif" : "Pictures",
+".raw" : "Pictures",
+".svg" : "Pictures", 
+".ico" : "Pictures",
+
+".mp4" : "Music", 
+".mp4v" : "Music", 
+".m4v" : "Music", 
+".avi" : "Music", 
+".mov" : "Music",
+
+".m4a" : "Videos", 
+".mp3" : "Videos", 
+".wav" : "Videos",
+".mkv" : "Videos",
+
+".doc" : "Documents", 
+".docx" : "Documents", 
+".odt" : "Documents",
+".pdf" : "Documents", 
+".xls" : "Documents",
+".xlsx" : "Documents", 
+".ppt" : "Documents", 
+".pptx" : "Documents"
+}
