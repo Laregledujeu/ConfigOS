@@ -8,17 +8,19 @@
 ".svg" : "Pictures", 
 ".ico" : "Pictures",
 
-".mp4" : "Music", 
+".mp3" : "Music", 
 ".mp4v" : "Music", 
 ".m4v" : "Music", 
-".avi" : "Music", 
 ".mov" : "Music",
 
+
+".avi" : "Videos",
 ".m4a" : "Videos", 
-".mp3" : "Videos", 
+".mp4" : "Videos", 
 ".wav" : "Videos",
 ".mkv" : "Videos",
 
+".txt" : "Documents",
 ".doc" : "Documents", 
 ".docx" : "Documents", 
 ".odt" : "Documents",

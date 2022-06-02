@@ -6,7 +6,7 @@ from json import *
 
 
 
-source_dir="/home/vym/Downloads"
+source_dir=["/home/vym/Downloads"]
 list_extension="/home/vym/Script/ExtensionRepertory.json"
 
 f=open(list_extension)
@@ -37,9 +37,11 @@ def Clean(source) :
             extension = splitext(entry.name)[-1].lower()
             if extension in json_extension.keys() : 
                 move_file("/home/vym/"+json_extension[extension],entry,entry.name)
-    sleep(5)
+    
 
 # ! NO NEED TO CHANGE BELOW CODE
 if __name__ == "__main__":
     while True :
-        Clean(source_dir)
+        for source in source_dir :
+            Clean(source)
+            sleep(5)
