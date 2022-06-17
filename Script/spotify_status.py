@@ -88,7 +88,7 @@ try:
     artist = fix_string(metadata['xesam:artist'][0]) if metadata['xesam:artist'] else ''
     song = fix_string(metadata['xesam:title']) if metadata['xesam:title'] else ''
     album = fix_string(metadata['xesam:album']) if metadata['xesam:album'] else ''
-
+    
     if (quiet and status == 'Paused') or (not artist and not song and not album):
         print('')
     else:
