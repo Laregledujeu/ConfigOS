@@ -1,3 +1,4 @@
 alias TP="cd /DATA/"
-alias al="vim .zsh_aliases"
+alias al="vim ~/.zsh_aliases"
 alias gitu="git add * && git commit && git push"
+alias save="(cd /home/vym/Desktop/ConfigOS/ && ./Save.sh) || echo -ne 'Save impossible'"
