@@ -436,5 +436,6 @@ bindsym Ctrl+mod1+Down exec (pactl set-sink-volume 0 -5% || pactl set-sink-volum
 # Bind Explorer 
 bindsym $mod+e exec nautilus
 
+#Toogle Bar
 bindsym $mod+m exec pkill polybar || /home/vym/Script/polybar_all_monitors.sh
 
