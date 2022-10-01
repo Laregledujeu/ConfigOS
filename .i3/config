@@ -1,7 +1,6 @@
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
@@ -425,13 +424,19 @@ exec ulauncher &
 # Start Cleaner
 exec python /home/vym/Script/Cleaner.py &
 
+# Start Shuffling Sentences
+exec python /home/vym/Script/shuffle_list.py & 
+
+# Auto xrandr
+bindsym $mod+p exec xrandr --auto && xrandr --output eDP --left-of HDMI-A-0 --right-of HDMI-A-0 && ~/Script/polybar_all_monitors.py 
+
 
 # Bind Spotify
 bindsym Ctrl+Mod1+space exec (playerctl --player=spotify play-pause &&  notify-send -t 1500 -i "/home/vym/.i3/Icons/SpotifyIcon.png" "Play-Pause") || ((spotify &) &&  notify-send -t 3000 -i "/home/vym/.i3/Icons/SpotifyIcon.png" "Launch") 
 bindsym Ctrl+Mod1+Right exec playerctl --player=spotify next || notify-send "Assistant" "Spotify n'est pas ouvert"
 bindsym Ctrl+Mod1+Left exec playerctl --player=spotify previous || notify-send "Assistant" "Spotify n'est pas ouvert"
-bindsym Ctrl+Mod1+Up exec (pactl set-sink-volume 0 +5% || pactl set-sink-volume 1 +5%) && notify-send -t 2000 $"Volume : $(~/.i3/get-volume.sh)"
-bindsym Ctrl+mod1+Down exec (pactl set-sink-volume 0 -5% || pactl set-sink-volume 1 -5%) && notify-send -t 2000 $"Volume : $(~/.i3/get-volume.sh)"
+bindsym Ctrl+Mod1+Up exec (pactl set-sink-volume 0 +5% && pactl set-sink-volume 1 +5%) && notify-send -t 2000 $"Volume : $(~/.i3/get-volume.sh)"
+bindsym Ctrl+mod1+Down exec (pactl set-sink-volume 0 -5% && pactl set-sink-volume 1 -5%) && notify-send -t 2000 $"Volume : $(~/.i3/get-volume.sh)"
 
 # Bind Explorer 
 bindsym $mod+e exec nautilus

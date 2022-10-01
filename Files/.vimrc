@@ -1,3 +1,5 @@
+set rtp +=~/.vim/bundle/Vundle.vim
+
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
@@ -39,6 +41,37 @@ set showmatch
 
 " Use highlighting when doing a search.
 set hlsearch
+
+" Disable highlight brackets
+let g:loaded_matchparen=1
+
+
+" Change Cursor to line 
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
+" Change Theme
+colorscheme onedark
+
+
+" create line
+let g:lightline = {
+  \ 'colorscheme': 'onedark',
+  \ }
+
+" set highlight Cursor ctermbg=darkmagenta
+
+call plug#begin(“~/.vim/plugged”)
+ “ Plugin Section
+ Plug 'ryanoasis/vim-devicons'
+ Plug 'SirVer/ultisnips'
+ Plug 'honza/vim-snippets'
+ Plug 'scrooloose/nerdtree'
+ Plug 'preservim/nerdcommenter'
+ Plug 'mhinz/vim-startify'
+ Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+
 
 
 " Press Tab for completion

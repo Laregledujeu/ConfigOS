@@ -3,6 +3,8 @@
 import sys
 import dbus
 import argparse
+import random as rd
+from os.path import expanduser
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
@@ -52,6 +54,12 @@ def truncate(name, trunclen):
     return name
 
 
+
+def random_sentences() :
+    filepath = "~/Script/sentences_list.txt"
+    with open(expanduser(filepath),'r', encoding="utf-8") as f :
+        liste = f.readline()
+    return liste
 
 # Default parameters
 output = fix_string(u'{artist}: {song}')
@@ -104,6 +112,6 @@ try:
 
 except Exception as e:
     if isinstance(e, dbus.exceptions.DBusException):
-        print('')
+        print(random_sentences())
     else:
         print(e)

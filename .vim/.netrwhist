@@ -1,6 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
-let g:netrw_dirhist_4='/home/vym'
-let g:netrw_dirhist_3='/home/vym/TestApp'
-let g:netrw_dirhist_2='/home/vym/.config/polybar'
-let g:netrw_dirhist_1='/home/vym/Script'
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/vym/Prog/THLR/TP-01'
+let g:netrw_dirhist_2='/home/vym/Prog/C/vianney.marticou-2026-asm-s3-tp06/image'
+let g:netrw_dirhist_1='/home/vym/Prog/C/vianney.marticou-2026-asm-s3-tp05/substrings'

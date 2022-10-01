@@ -1,4 +1,9 @@
-alias TP="cd /DATA/"
+alias c="cd ~/Prog/C"
 alias al="vim ~/.zsh_aliases"
+alias connect="nmcli dev wifi connect 2E:29:FD:8E:B1:5C"
 alias gitu="git add * && git commit && git push"
 alias save="(cd /home/vym/Desktop/ConfigOS/ && ./Save.sh && cd) || echo -ne 'Save impossible'"
+alias author="echo -e 'Vianney\nMarticou\nvianney.marticou\nvianney.marticou@epita.fr' > AUTHORS && echo 'The file was create.'"
+alias lock='xdotool getactivewindow windowminimize && sleep 1 && import -window root lock_bg.png && i3lock -i lock_bg.png && rm lock_bg.png'
+alias scan="nmcli dev wifi"
+alias la="(sudo systemctl restart lightdm && sudo systemctl start bluetooth && exit) || exit"
