@@ -1,4 +1,7 @@
-set rtp +=~/.vim/bundle/Vundle.vim
+
+lua require('plugins')
+
+source /home/vym/.config/nvim/keymap.vim
 
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
@@ -22,7 +25,7 @@ set cursorline
 
 set history=100
 
-" Set shift width to 4 spaces.
+" Set shift width to 4 spaces.
 set shiftwidth=4
 
 " Set tab width to 4 columns.
@@ -45,23 +48,18 @@ set hlsearch
 " Disable highlight brackets
 let g:loaded_matchparen=1
 
-
 " Change Cursor to line 
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
-" Change Theme
-colorscheme onedark
-
 
 " create line
 let g:lightline = {
-  \ 'colorscheme': 'onedark',
-  \ }
+    \ 'colorscheme': 'onedark',
+\ }
 
+colo onedark 
 " set highlight Cursor ctermbg=darkmagenta
-
-
 
 
 " Press Tab for completion

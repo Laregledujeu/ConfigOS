@@ -1,7 +1,14 @@
+alias vim="nvim" 
+alias plug="nvim /home/vym/.config/nvim/lua/plugins.lua" 
+
+# Coding CD
 alias c="cd ~/Prog/C"
 alias th="cd ~/Prog/THLR"
 alias asm="cd ~/Prog/ASM"
+alias ocr="cd ~/Prog/C/vianney.marticou"
+alias pyt="cd ~/Prog/PYTHON/"
 
+# Others
 alias al="vim ~/.zsh_aliases"
 alias connect="nmcli dev wifi connect 2E:29:FD:8E:B1:5C"
 alias gitu="git add * && git commit && git push"

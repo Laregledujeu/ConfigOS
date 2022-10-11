@@ -43,10 +43,6 @@ bindsym $mod+z exec --no-startup-id morc_menu
 ################################################################################################
 
 exec --no-startup-id volumeicon
-bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-#exec --no-startup-id pulseaudio
-#exec --no-startup-id pa-applet
-#bindsym $mod+Ctrl+m exec pavucontrol
 
 ################################################################################################
 
@@ -111,7 +107,7 @@ bindsym $mod+q split toggle
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s exec pavucontrol
+bindsym $mod+s exec terminal -e "pulsemixer"
 bindsym $mod+w layout tabbed
 
 # toggle tiling / floating
@@ -181,12 +177,12 @@ bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open applications on specific workspaces
-# assign [class="Thunderbird"] $ws1
+assign [class="Spotify"] $ws8
 # assign [class="Pcmanfm"] $ws3
 # assign [class="Skype"] $ws5
 
 # Open specific applications in floating mode
-for_window [title="alsamixer"] floating enable border pixel 1
+for_window [title="pulsemixer"] floating enable border pixel 2
 for_window [class="calamares"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
 for_window [title="File Transfer*"] floating enable
@@ -430,7 +426,6 @@ exec python /home/vym/Script/shuffle_list.py &
 # Auto xrandr
 bindsym $mod+p exec xrandr --auto && xrandr --output eDP --left-of HDMI-A-0 --right-of HDMI-A-0 && ~/Script/polybar_all_monitors.py 
 
-
 # Bind Spotify
 bindsym Ctrl+Mod1+space exec (playerctl --player=spotify play-pause &&  notify-send -t 1500 -i "/home/vym/.i3/Icons/SpotifyIcon.png" "Play-Pause") || ((spotify &) &&  notify-send -t 3000 -i "/home/vym/.i3/Icons/SpotifyIcon.png" "Launch") 
 bindsym Ctrl+Mod1+Right exec playerctl --player=spotify next || notify-send "Assistant" "Spotify n'est pas ouvert"
@@ -444,3 +439,6 @@ bindsym $mod+e exec nautilus
 #Toogle Bar
 bindsym $mod+m exec pkill polybar || /home/vym/Script/polybar_all_monitors.sh
 
+
+exec "setxkbmap us -variant intl,fr"
+exec "setxkbmap -option 'grp:win_space_toggle'"
