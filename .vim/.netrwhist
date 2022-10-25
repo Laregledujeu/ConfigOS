@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/vym/Prog/C/epita-prepa-asm-2026-s3-tp07-vianney.marticou/arrays'
 let g:netrw_dirhist_5='/home/vym/Prog/C/vianney.marticou/src'
 let g:netrw_dirhist_4='/home/vym/Prog/C/vianney.marticou'
 let g:netrw_dirhist_3='/home/vym/Prog/C/vianney.marticou/src'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_0='/home/vym/Prog/C/vianney.marticou/src'
 let g:netrw_dirhist_9='/home/vym/Prog/C/vianney.marticou'
 let g:netrw_dirhist_8='/home/vym/Prog/C/vianney.marticou/src/Treatment'
 let g:netrw_dirhist_7='/home/vym/Prog/C/vianney.marticou/src'
-let g:netrw_dirhist_6='/home/vym/Prog/C/vianney.marticou'

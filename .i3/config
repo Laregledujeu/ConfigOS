@@ -177,8 +177,9 @@ bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open applications on specific workspaces
-assign [class="Spotify"] $ws8
 # assign [class="Pcmanfm"] $ws3
+for_window [class="Spotify"] move to workspace $ws4
+for_window [class="htop"] move to workspace $ws8
 # assign [class="Skype"] $ws5
 
 # Open specific applications in floating mode
@@ -439,6 +440,4 @@ bindsym $mod+e exec nautilus
 #Toogle Bar
 bindsym $mod+m exec pkill polybar || /home/vym/Script/polybar_all_monitors.sh
 
-
-exec "setxkbmap us -variant intl,fr"
-exec "setxkbmap -option 'grp:win_space_toggle'"
+exec ~/Script/syncthing 

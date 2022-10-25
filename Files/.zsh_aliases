@@ -5,12 +5,15 @@ alias plug="nvim /home/vym/.config/nvim/lua/plugins.lua"
 alias c="cd ~/Prog/C"
 alias th="cd ~/Prog/THLR"
 alias asm="cd ~/Prog/ASM"
-alias ocr="cd ~/Prog/C/vianney.marticou"
+alias ocr="cd ~/Prog/C/vianney.marticou && vim"
 alias pyt="cd ~/Prog/PYTHON/"
+
+# Git
+alias gitu="git add * && git commit && git push"
+alias gitl=" git log --graph --oneline --all"
 
 # Others
 alias al="vim ~/.zsh_aliases"
-alias gitu="git add * && git commit && git push"
 alias connect="sh ~/Script/auto_connect.sh &"
 alias save="(cd /home/vym/Desktop/ConfigOS/ && ./Save.sh && cd) || echo -ne 'Save impossible'"
 alias author="echo -e 'Vianney\nMarticou\nvianney.marticou\nvianney.marticou@epita.fr' > AUTHORS && echo 'The file was create.'"

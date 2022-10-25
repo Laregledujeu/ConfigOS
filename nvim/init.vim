@@ -3,6 +3,8 @@ lua require('plugins')
 
 source /home/vym/.config/nvim/keymap.vim
 
+set updatetime=100
+
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
@@ -23,6 +25,7 @@ let g:gitgutter_sign_added = '✚'
 let g:gitgutter_sign_modified = '✹'
 let g:gitgutter_sign_removed = '-'
 
+
 " Number on lines
 set number
 
@@ -38,6 +41,8 @@ set tabstop=4
 
 " Use space characters instead of tabs.
 set expandtab
+
+set colorcolumn=80
 
 set nobackup
 
