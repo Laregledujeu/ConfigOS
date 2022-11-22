@@ -20,3 +20,6 @@ alias author="echo -e 'Vianney\nMarticou\nvianney.marticou\nvianney.marticou@epi
 alias lock='xdotool getactivewindow windowminimize && sleep 1 && import -window root lock_bg.png && i3lock -i lock_bg.png && rm lock_bg.png'
 alias scan="nmcli dev wifi"
 alias la="(sudo systemctl restart lightdm && sudo systemctl start bluetooth && exit) || exit"
+
+
+alias reboot="sudo kexec -l /boot/vmlinuz-5.15-x86_64 --initrd=/boot/initramfs-5.15-x86_64.img --reuse-cmdline && systemctl kexec"

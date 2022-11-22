@@ -5,6 +5,8 @@ source /home/vym/.config/nvim/keymap.vim
 
 set updatetime=100
 
+set keywordprg=:Man 
+
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
