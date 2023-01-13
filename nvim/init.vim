@@ -3,6 +3,24 @@ lua require('plugins')
 
 source /home/vym/.config/nvim/keymap.vim
 
+packadd termdebug
+
+" Add GDB Debugger
+" packadd termdebug
+
+" Gdb Config
+let g:termdebug_wide=1
+let g:termdebug_useFloatingHover = 0
+let g:termdebug_popup = 0
+let g:termdebug_wide = 163
+
+nnoremap <silent> <C-n> :Over<CR>
+nnoremap <silent> <C-s> :Step<CR>
+nnoremap <silent> <C-b> :Break<CR>
+nnoremap <silent> <C-c> :Clear<CR>
+nnoremap <silent> <A-c> :Continue<CR>
+
+
 set updatetime=100
 
 set keywordprg=:Man 
@@ -72,7 +90,6 @@ let g:lightline = {
 
 colo onedark 
 " set highlight Cursor ctermbg=darkmagenta
-
 
 " Press Tab for completion
 set wildmenu

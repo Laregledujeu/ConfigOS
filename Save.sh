@@ -22,5 +22,5 @@ done < "$file_path"
 
 
 currentdate=$(date)
-git add . && git commit && git push && notify-send "Save Finish"
+git add . && git commit && git push -q && notify-send "Save Finish"
 #git add . && git commit -m "$currentdate" && git push && echo -e "\nSave Finish\n"
