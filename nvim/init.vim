@@ -1,7 +1,7 @@
 
 lua require('plugins')
 
-source /home/vym/.config/nvim/keymap.vim
+source ~/.config/nvim/keymap.vim
 
 packadd termdebug
 
@@ -14,11 +14,6 @@ let g:termdebug_useFloatingHover = 0
 let g:termdebug_popup = 0
 let g:termdebug_wide = 163
 
-nnoremap <silent> <C-n> :Over<CR>
-nnoremap <silent> <C-s> :Step<CR>
-nnoremap <silent> <C-b> :Break<CR>
-nnoremap <silent> <C-c> :Clear<CR>
-nnoremap <silent> <A-c> :Continue<CR>
 
 
 set updatetime=100
@@ -87,6 +82,17 @@ let &t_EI = "\e[2 q"
 let g:lightline = {
     \ 'colorscheme': 'onedark',
 \ }
+
+set termguicolors            " 24 bit color
+let g:aurora_italic = 1     " italic
+let g:aurora_transparent = 1     " transparent
+let g:aurora_bold = 1     " bold
+let g:aurora_darker = 1     " darker background
+
+
+" customize your own highlight
+hi Normal guibg=NONE ctermbg=NONE 
+hi String guibg=#339922 ctermbg=NONE 
 
 colo onedark 
 " set highlight Cursor ctermbg=darkmagenta

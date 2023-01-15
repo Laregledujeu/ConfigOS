@@ -1,6 +1,10 @@
+
+source ~/.config/nvim/disable_keymap.vim
+
 " Control - O : find file with name."
 nnoremap <A-o> <cmd>Telescope find_files<cr>
 nnoremap <A-f> <cmd>Telescope live_grep<cr>
+nnoremap <C-c> :Telescope colorscheme<cr>
 " Control - L : find in file
 " nnoremap <C-l> <cmd>Telescope live_grep<cr>
 " need to remake
@@ -23,20 +27,10 @@ noremap <A-w> :tabclose<CR>
 noremap <A-h> :tabprevious<CR>
 noremap <A-l> :tabnext<CR>
 
-" nnoremap <Left> :echo \"No left for you!\"<CR>
-" vnoremap <Left> :<C-u>echo \"No left for you!\"<CR>
-" inoremap <Left> <C-o>:echo \"No left for you!\"<CR>
+" Use for the GDB
 
-
-" nnoremap <Right> :echo \"No right for you!\"<CR>
-" vnoremap <Right> :<C-u>echo \"No right for you!\"<CR>
-" inoremap <Right> <C-o>:echo \"No right for you!\"<CR>
-
-
-" nnoremap <Up> :echo \"No up for you!\"<CR>
-" vnoremap <Up> :<C-u>echo \"No up for you!\"<CR>
-" inoremap <Up> <C-o>:echo \"No up for you!\"<CR>
- 
-" nnoremap <Down> :echo \"No down for you!\"<CR>
-" vnoremap <Down> :<C-u>echo \"No down for you!\"<CR>
-" inoremap <Down> <C-o>:echo \"No down for you!\"<CR>
+" nnoremap <silent> <C-n> :Over<CR>
+" nnoremap <silent> <C-s> :Step<CR>
+" nnoremap <silent> <C-b> :Break<CR>
+" nnoremap <silent> <C-c> :Clear<CR>
+" nnoremap <silent> <A-c> :Continue<CR>
