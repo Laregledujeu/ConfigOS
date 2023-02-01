@@ -137,6 +137,7 @@ ex ()
 }
 
 
+clear 
 cat .bash_ascii
 zsh
 . "$HOME/.cargo/env"

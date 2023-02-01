@@ -1,7 +1,7 @@
 
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    
+
     use 'tpope/vim-fugitive'
 
     use {
@@ -10,6 +10,8 @@ return require('packer').startup(function(use)
     }
     
     use 'BurntSushi/ripgrep'
+
+    use 'hrsh7th/nvim-compe'
 
     use 'sharkdp/fd' 
 
@@ -22,3 +24,4 @@ return require('packer').startup(function(use)
 
     use 'ray-x/aurora'
 end)
+

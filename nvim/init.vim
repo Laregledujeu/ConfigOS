@@ -54,6 +54,10 @@ set shiftwidth=4
 " Set tab width to 4 columns.
 set tabstop=4
 
+" Set the scrolloff, the cursor cant touch the top and bottom
+set scrolloff=4
+
+
 " Use space characters instead of tabs.
 set expandtab
 
@@ -99,5 +103,7 @@ colo onedark
 
 " Press Tab for completion
 set wildmenu
-set wildmode=list:longest
+set completeopt=menuone,noselect
+set wildmode=list,full
+set wildignore=*.o,*.obj
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
