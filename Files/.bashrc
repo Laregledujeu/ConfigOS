@@ -1,7 +1,7 @@
 #
 # ~/.bashrc
 #
-
+export VYM=0
 [[ $- != *i* ]] && return
 
 colors() {

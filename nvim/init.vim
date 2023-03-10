@@ -14,7 +14,8 @@ let g:termdebug_useFloatingHover = 0
 let g:termdebug_popup = 0
 let g:termdebug_wide = 163
 
-
+" Merge the clipboard 
+set clipboard=unnamedplus
 
 set updatetime=100
 

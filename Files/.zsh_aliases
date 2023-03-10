@@ -1,8 +1,17 @@
+color()
+{
+    for i in {1..6}
+    do
+        echo "\033[0;3${i}m The color is ${i}"
+    done
+}
+
 alias vim="nvim" 
 alias plug="nvim /home/vym/.config/nvim/lua/plugins.lua" 
 
 # Coding CD
 alias c="cd ~/Prog/C"
+alias jav="cd ~/Prog/JAVA/"
 alias th="cd ~/Prog/THLR"
 alias asm="cd ~/Prog/ASM"
 alias ocr="cd ~/Prog/C/vianney.marticou && vim"
